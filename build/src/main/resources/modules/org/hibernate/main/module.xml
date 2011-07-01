@@ -42,5 +42,6 @@
         <module name="org.jboss.as.jpa.hibernate4"/>
         <module name="org.jboss.logging"/>
         <module name="org.slf4j"/>
+<module name="org.hibernate.envers"/>
     </dependencies>
 </module>

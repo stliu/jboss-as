@@ -31,6 +31,24 @@ import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import static org.junit.Assert.assertTrue;
+
+import java.sql.Connection;
+
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+import org.jboss.arquillian.container.test.api.Deployment;
+import org.jboss.arquillian.junit.Arquillian;
+import org.jboss.shrinkwrap.api.Archive;
+import org.jboss.shrinkwrap.api.ShrinkWrap;
+import org.jboss.shrinkwrap.api.asset.StringAsset;
+import org.jboss.shrinkwrap.api.spec.JavaArchive;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
 
 /**
  * @author Strong Liu
@@ -45,13 +63,18 @@ public class BasicEnversTestCase {
 					"  <persistence-unit name=\"mypc\">" +
 					"    <description>Persistence Unit." +
 					"    </description>" +
-					"    <jta-data-source>H2DS</jta-data-source>" +
+					"    <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>" +
 					"    <properties> " +
 					"      <property name=\"hibernate.hbm2ddl.auto\" value=\"create-drop\"/>" +
 					"    </properties>" +
 					"  </persistence-unit>" +
 					"</persistence>";
+			  private static InitialContext iniCtx;
 
+			    @BeforeClass
+			    public static void beforeClass() throws NamingException {
+			        iniCtx = new InitialContext();
+			    }
 	@Deployment
 	public static Archive<?> deploy() {
 		JavaArchive jar = ShrinkWrap.create( JavaArchive.class, ARCHIVE_NAME + ".jar" );
@@ -63,6 +86,14 @@ public class BasicEnversTestCase {
 		jar.add( new StringAsset( persistence_xml ), "META-INF/persistence.xml" );
 		return jar;
 	}
+	
+	protected static <T> T lookup(String beanName, Class<T> interfaceType) throws NamingException {
+        return interfaceType.cast(iniCtx.lookup("java:global/" + ARCHIVE_NAME + "/" + beanName + "!" + interfaceType.getName()));
+    }
+
+    protected static <T> T rawLookup(String name, Class<T> interfaceType) throws NamingException {
+        return interfaceType.cast(iniCtx.lookup(name));
+    }
 
 	@EJB(mappedName = "java:global/"+ARCHIVE_NAME+"/SLSBPU!org.jboss.as.testsuite.integration.jpa.hibernate.envers.SLSBPU")
 	private SLSBPU slsbpu;
@@ -76,6 +107,7 @@ public class BasicEnversTestCase {
 		a1.setHouseNumber( 5 );
 
 		p2.setAddress( a1 );
+		SLSBPU slsbpu = lookup("SLSBPU", SLSBPU.class);
 		slsbpu.updateAddress( a1 );
 		slsbpu.updatePerson( p2 );
 

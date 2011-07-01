@@ -67,6 +67,9 @@ public class WeldDependencyProcessor implements DeploymentUnitProcessor {
         addDependency(moduleSpecification, moduleLoader, JAVAX_PERSISTENCE_API_ID);
         addDependency(moduleSpecification, moduleLoader, JAVAEE_API_ID);
         addDependency(moduleSpecification, moduleLoader, JBOSS_INTERCEPTOR_ID);
+        addDependency(moduleSpecification, moduleLoader, JBOSS_AS_JPA_ID);
+        addDependency(moduleSpecification, moduleLoader, JBOSS_HIBERNATE_ID);
+        addDependency(moduleSpecification, moduleLoader, JBOSS_HIBERNATE_ENVERS_ID);
         addDependency(moduleSpecification, moduleLoader, JAVASSIST_ID);
         addDependency(moduleSpecification, moduleLoader, WELD_CORE_ID);
         addDependency(moduleSpecification, moduleLoader, WELD_API_ID);
