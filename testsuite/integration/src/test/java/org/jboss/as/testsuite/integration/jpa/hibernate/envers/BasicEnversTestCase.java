@@ -91,16 +91,8 @@ public class BasicEnversTestCase {
         return interfaceType.cast(iniCtx.lookup("java:global/" + ARCHIVE_NAME + "/" + beanName + "!" + interfaceType.getName()));
     }
 
-    protected static <T> T rawLookup(String name, Class<T> interfaceType) throws NamingException {
-        return interfaceType.cast(iniCtx.lookup(name));
-    }
-
-//	@EJB(mappedName = "java:global/"+ARCHIVE_NAME+"/SLSBPU!org.jboss.as.testsuite.integration.jpa.hibernate.envers.SLSBPU")
-//	private SLSBPU slsbpu;
-
-
 	@Test
-	public void testBothPersistenceUnitDefinitions() throws Exception {
+	public void testSimpleEnversOperation() throws Exception {
         SLSBPU slsbpu = lookup("SLSBPU",SLSBPU.class);
 		Person p1= slsbpu.createPerson( "Strong","Liu","kexueyuan source road",307 );
 		Person p2= slsbpu.createPerson( "tom","cat","apache",34 );
@@ -108,7 +100,6 @@ public class BasicEnversTestCase {
 		a1.setHouseNumber( 5 );
 
 		p2.setAddress( a1 );
-//		SLSBPU slsbpu = lookup("SLSBPU", SLSBPU.class);
 		slsbpu.updateAddress( a1 );
 		slsbpu.updatePerson( p2 );
 
