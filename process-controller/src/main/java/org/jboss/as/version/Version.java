@@ -34,6 +34,7 @@ import java.util.jar.Manifest;
 public class Version {
     public static final String AS_VERSION;
     public static final String AS_RELEASE_CODENAME;
+    public static final String EAP_VERSION;
 
     static {
         InputStream stream = Version.class.getClassLoader().getResourceAsStream("META-INF/MANIFEST.MF");
@@ -45,12 +46,15 @@ public class Version {
         }
 
         String version = "Unknown", code = version;
+        String eapVersion = "Unknown";
         if (manifest != null) {
             version = manifest.getMainAttributes().getValue("JBossAS-Release-Version");
             code = manifest.getMainAttributes().getValue("JBossAS-Release-Codename");
+            eapVersion = manifest.getMainAttributes().getValue("JBossEAP-Release-Version");
         }
 
         AS_VERSION = version;
         AS_RELEASE_CODENAME = code;
+        EAP_VERSION = eapVersion;
     }
 }

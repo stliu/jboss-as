@@ -52,7 +52,7 @@ import org.jboss.threads.JBossThreadFactory;
 public final class Main {
 
     public static String getVersionString() {
-        return Version.AS_VERSION;
+        return Version.EAP_VERSION;
     }
 
     public static void usage() {
@@ -165,7 +165,7 @@ public final class Main {
                                 return null;
                             } else if (CommandLineConstants.VERSION.equals(arg) || CommandLineConstants.SHORT_VERSION.equals(arg)
                                     || CommandLineConstants.OLD_VERSION.equals(arg)) {
-                                System.out.println("\nJBoss Application Server " + getVersionString());
+                                System.out.println("\nJBoss Enterprise Application Platform " + getVersionString());
                                 return null;
                             }
                             smOptions.add(arg);

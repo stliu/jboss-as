@@ -124,7 +124,7 @@ public final class Main {
             final String arg = args[i];
             try {
                 if (CommandLineConstants.VERSION.equals(arg) || CommandLineConstants.SHORT_VERSION.equals(arg) || CommandLineConstants.OLD_VERSION.equals(arg)) {
-                    System.out.println("JBoss Application Server " + getVersionString());
+                    System.out.println("JBoss Enterprise Application Platform " + getVersionString());
                     return null;
                 } else if (CommandLineConstants.HELP.equals(arg) || CommandLineConstants.SHORT_HELP.equals(arg) || CommandLineConstants.OLD_HELP.equals(arg)) {
                     usage();

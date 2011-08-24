@@ -51,6 +51,7 @@
     <properties>
          <!-- Release Info -->
         <jboss.as.release.version>${project.version}</jboss.as.release.version>
+        <jboss.eap.release.version>6.0.0.Alpha1</jboss.eap.release.version>
         <jboss.as.release.codename>Zap</jboss.as.release.codename>
         <jboss.as.scm.url>https://github.com/jbossas/jboss-as</jboss.as.scm.url>
         <jboss.as.scm.connection>git@github.com:jbossas/jboss-as.git</jboss.as.scm.connection>
@@ -322,6 +323,7 @@
                                 <Implementation-URL>${project.url}</Implementation-URL>
                                 <JBossAS-Release-Version>${jboss.as.release.version}</JBossAS-Release-Version>
                                 <JBossAS-Release-Codename>${jboss.as.release.codename}</JBossAS-Release-Codename>
+                                <JBossEAP-Release-Version>${jboss.eap.release.version}</JBossEAP-Release-Version>
                             </manifestEntries>
                             <manifestSections>
                                 <manifestSection>
