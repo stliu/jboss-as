@@ -79,7 +79,8 @@ final class ApplicationServerService implements Service<AsyncFuture<ServiceConta
         // Install the environment before doing anything
         serverEnvironment.install();
 
-        log.infof("JBoss AS %s \"%s\" starting", Version.AS_VERSION, Version.AS_RELEASE_CODENAME);
+        log.infof("JBoss EAP %s (AS %s) starting", Version.EAP_VERSION, Version.AS_VERSION);
+
         if (configLog.isDebugEnabled()) {
             final Properties properties = System.getProperties();
             final StringBuilder b = new StringBuilder(8192);
@@ -163,7 +164,7 @@ final class ApplicationServerService implements Service<AsyncFuture<ServiceConta
 
         if (log.isDebugEnabled()) {
             final long nanos = context.getElapsedTime();
-            log.debugf("JBoss AS root service started in %d.%06d ms", Long.valueOf(nanos / 1000000L), Long.valueOf(nanos % 1000000L));
+            log.debugf("JBoss EAP root service started in %d.%06d ms", Long.valueOf(nanos / 1000000L), Long.valueOf(nanos % 1000000L));
         }
     }
 
@@ -171,7 +172,7 @@ final class ApplicationServerService implements Service<AsyncFuture<ServiceConta
     public synchronized void stop(final StopContext context) {
         processState.setStopping();
         CurrentServiceContainer.setServiceContainer(null);
-        log.infof("JBoss AS %s \"%s\" stopped in %dms", Version.AS_VERSION, Version.AS_RELEASE_CODENAME, Integer.valueOf((int) (context.getElapsedTime() / 1000000L)));
+        log.infof("JBoss EAP %s (AS %s) stopped in %dms", Version.EAP_VERSION, Version.AS_VERSION, Integer.valueOf((int) (context.getElapsedTime() / 1000000L)));
     }
 
     @Override
