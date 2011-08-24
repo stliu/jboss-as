@@ -152,9 +152,9 @@ public class BootstrapListener extends AbstractServiceListener<Object> {
         final int onDemand = map.get(ServiceController.Mode.ON_DEMAND).get();
         final int never = map.get(ServiceController.Mode.NEVER).get();
         if (failed == 0) {
-            log.infof("%s %s \"%s\" started in %dms - Started %d of %d services (%d services are passive or on-demand)", processName, Version.AS_VERSION, Version.AS_RELEASE_CODENAME, Long.valueOf(elapsedTime), Integer.valueOf(started), Integer.valueOf(active + passive + onDemand + never), Integer.valueOf(onDemand + passive));
+            log.infof("JBoss EAP %s (AS %s) started in %dms - Started %d of %d services (%d services are passive or on-demand)", Version.EAP_VERSION, Version.AS_VERSION, Long.valueOf(elapsedTime), Integer.valueOf(started), Integer.valueOf(active + passive + onDemand + never), Integer.valueOf(onDemand + passive));
         } else {
-            log.errorf("%s %s \"%s\" started (with errors) in %dms - Started %d of %d services (%d services failed or missing dependencies, %d services are passive or on-demand)", processName, Version.AS_VERSION, Version.AS_RELEASE_CODENAME, Long.valueOf(elapsedTime), Integer.valueOf(started), Integer.valueOf(active + passive + onDemand + never), Integer.valueOf(failed), Integer.valueOf(onDemand + passive));
+            log.errorf("JBoss EAP %s (AS %s) started (with errors) in %dms - Started %d of %d services (%d services failed or missing dependencies, %d services are passive or on-demand)", Version.EAP_VERSION, Version.AS_VERSION, Long.valueOf(elapsedTime), Integer.valueOf(started), Integer.valueOf(active + passive + onDemand + never), Integer.valueOf(failed), Integer.valueOf(onDemand + passive));
         }
     }
 }

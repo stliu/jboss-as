@@ -81,7 +81,7 @@ public interface ServerLogger extends BasicLogger {
      * @param codeName the code name.
      */
     @LogMessage(level = INFO)
-    @Message("JBoss AS %s \"%s\" starting")
+    @Message("JBoss EAP %s (AS %s) starting")
     void serverStarting(String version, String codeName);
 
     /**
@@ -92,7 +92,7 @@ public interface ServerLogger extends BasicLogger {
      * @param time     the time it took to stop.
      */
     @LogMessage(level = INFO)
-    @Message("JBoss AS %s \"%s\" stopped in %dms")
+    @Message("JBoss EAP %s (AS %s) stopped in %dms")
     void serverStopped(String version, String codeName, int time);
 
     /**

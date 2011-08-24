@@ -56,6 +56,7 @@
          <!-- Release Info -->
         <jboss.as.release.version>${project.version}</jboss.as.release.version>
         <jboss.as.release.codename>Tesla</jboss.as.release.codename>
+        <jboss.eap.release.version>6.0.0.Alpha2</jboss.eap.release.version>
         <jboss.as.scm.url>https://github.com/jbossas/jboss-as</jboss.as.scm.url>
         <jboss.as.scm.connection>git@github.com:jbossas/jboss-as.git</jboss.as.scm.connection>
 
@@ -328,6 +329,7 @@
                                 <Implementation-URL>${project.url}</Implementation-URL>
                                 <JBossAS-Release-Version>${jboss.as.release.version}</JBossAS-Release-Version>
                                 <JBossAS-Release-Codename>${jboss.as.release.codename}</JBossAS-Release-Codename>
+                                <JBossEAP-Release-Version>${jboss.eap.release.version}</JBossEAP-Release-Version>
                             </manifestEntries>
                             <manifestSections>
                                 <manifestSection>

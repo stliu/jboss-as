@@ -92,7 +92,7 @@ final class ApplicationServerService implements Service<AsyncFuture<ServiceConta
         // Install the environment before doing anything
         serverEnvironment.install();
 
-        AS_ROOT_LOGGER.serverStarting(Version.AS_VERSION, Version.AS_RELEASE_CODENAME);
+        AS_ROOT_LOGGER.serverStarting(Version.EAP_VERSION, Version.AS_VERSION);
         if (CONFIG_LOGGER.isDebugEnabled()) {
             final Properties properties = System.getProperties();
             final StringBuilder b = new StringBuilder(8192);
@@ -180,7 +180,7 @@ final class ApplicationServerService implements Service<AsyncFuture<ServiceConta
 
         if (AS_ROOT_LOGGER.isDebugEnabled()) {
             final long nanos = context.getElapsedTime();
-            AS_ROOT_LOGGER.debugf("JBoss AS root service started in %d.%06d ms", Long.valueOf(nanos / 1000000L), Long.valueOf(nanos % 1000000L));
+            AS_ROOT_LOGGER.debugf("JBoss EAP root service started in %d.%06d ms", Long.valueOf(nanos / 1000000L), Long.valueOf(nanos % 1000000L));
         }
     }
 
@@ -188,7 +188,7 @@ final class ApplicationServerService implements Service<AsyncFuture<ServiceConta
     public synchronized void stop(final StopContext context) {
         processState.setStopping();
         CurrentServiceContainer.setServiceContainer(null);
-        AS_ROOT_LOGGER.serverStopped(Version.AS_VERSION, Version.AS_RELEASE_CODENAME, Integer.valueOf((int) (context.getElapsedTime() / 1000000L)));
+        AS_ROOT_LOGGER.serverStopped(Version.EAP_VERSION, Version.AS_VERSION, Integer.valueOf((int) (context.getElapsedTime() / 1000000L)));
     }
 
     @Override
