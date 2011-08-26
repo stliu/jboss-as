@@ -546,8 +546,8 @@ public class ParseAndMarshalModelsTestCase {
         //Get the standalone.xml from the build/src directory, since the one in the
         //built server could have changed during running of tests
 
-        String profile = preview ? (ha ? "standalone-preview-ha.xml" : "standalone-preview.xml")
-                                 : (ha ? "standalone-ha.xml" : "standalone.xml");
+        String profile = preview ? (ha ? "standalone-ha.xml" : "standalone.xml")
+                                 : (ha ? "standalone-web-ha.xml" : "standalone-web.xml");
         File f = new File(".").getAbsoluteFile();
         f = f.getParentFile().getParentFile().getParentFile();
         Assert.assertTrue(f.exists());
@@ -602,7 +602,7 @@ public class ParseAndMarshalModelsTestCase {
         //Get the standalone.xml from the build/src directory, since the one in the
         //built server could have changed during running of tests
         File f = getDomainConfigDir();
-        f = new File(f, preview ? "domain-preview.xml" : "domain.xml");
+        f = new File(f, preview ? "domain.xml" : "domain.xml");
         Assert.assertTrue(f.exists());
         return f;
     }

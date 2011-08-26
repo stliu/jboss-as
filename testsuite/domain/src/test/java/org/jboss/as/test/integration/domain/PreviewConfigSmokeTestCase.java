@@ -30,7 +30,7 @@ package org.jboss.as.test.integration.domain;
 public class PreviewConfigSmokeTestCase extends BuildConfigurationTestBase {
     @Override
     protected String getDomainConfigFile() {
-        return "domain-preview.xml";
+        return "domain.xml";
     }
 
     @Override

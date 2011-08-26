@@ -93,7 +93,7 @@
                                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
                                     <enableAssertions>true</enableAssertions>
                                     <systemPropertyVariables>
-                                        <jboss.server.config.file.name>standalone-preview-ha.xml</jboss.server.config.file.name>
+                                        <jboss.server.config.file.name>standalone-ha.xml</jboss.server.config.file.name>
                                     </systemPropertyVariables>
                                 </configuration>
                             </execution>

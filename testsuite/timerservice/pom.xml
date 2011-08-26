@@ -64,7 +64,7 @@
                             <redirectTestOutputToFile>true</redirectTestOutputToFile>
                             <enableAssertions>true</enableAssertions>
                             <systemPropertyVariables>
-                                <jboss.server.config.file.name>standalone-preview.xml</jboss.server.config.file.name>
+                                <jboss.server.config.file.name>standalone.xml</jboss.server.config.file.name>
                             </systemPropertyVariables>
                             <includes>
                                 <include>**/*TestCase.java</include>
@@ -131,7 +131,7 @@
                                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
                                     <enableAssertions>true</enableAssertions>
                                     <systemPropertyVariables>
-                                        <jboss.server.config.file.name>standalone-preview.xml
+                                        <jboss.server.config.file.name>standalone.xml
                                         </jboss.server.config.file.name>
                                     </systemPropertyVariables>
                                     <includes>
