@@ -85,7 +85,7 @@
         <version.javax.mail.mail>[1.4.4,1.4.4-redhat-1]</version.javax.mail.mail>
         <version.javax.validation.validation-api>[1.0.0.GA,1.0.0.GA-redhat-1]</version.javax.validation.validation-api>
         <version.jaxbintros>[1.0.2.GA,1.0.2.GA-redhat-1]</version.jaxbintros>
-        <version.jline>0.9.94</version.jline>
+        <version.jline>[0.9.94,0.9.94-redhat-1]</version.jline>
         <version.joda-time>[1.6.2,1.6.2-redhat-1]</version.joda-time>
         <version.junit>[4.8.2,4.8.2-redhat-1]</version.junit>
         <version.log4j.log4j>[1.2.16,1.2.16-redhat-1]</version.log4j.log4j>
