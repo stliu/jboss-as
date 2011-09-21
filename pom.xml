@@ -196,7 +196,7 @@
         <version.org.jboss.stdio.jboss-stdio>[1.0.0.GA,1.0.0.GA-redhat-1]</version.org.jboss.stdio.jboss-stdio>
         <version.org.jboss.threads.jboss-threads>[2.0.0.GA,2.0.0.GA-redhat-1]</version.org.jboss.threads.jboss-threads>
         <version.org.jboss.web>[7.0.1.Final,7.0.1.Final-redhat-1]</version.org.jboss.web>
-        <version.org.jboss.web.jasper-jdt>[7.0.0.Beta8,7.0.0.Beta8-redhat-1]</version.org.jboss.web.jasper-jdt>
+        <version.org.jboss.web.jasper-jdt>[7.0.0.CR4,7.0.0.CR4-redhat-1]</version.org.jboss.web.jasper-jdt>
         <version.org.jboss.weld.weld>[1.1.2.Final,1.1.2.Final-redhat-1]</version.org.jboss.weld.weld>
         <version.org.jboss.weld.weld-api>[1.1.Final,1.1.Final-redhat-1]</version.org.jboss.weld.weld-api>
         <version.org.jboss.ws.api>[1.0.0.Beta2,1.0.0.Beta2-redhat-1]</version.org.jboss.ws.api>
