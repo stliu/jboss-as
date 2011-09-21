@@ -63,7 +63,7 @@
         <!-- Dependency versions. Please keep alphabetical -->
 
         <version.antlr>[2.7.7,2.7.7-redhat-1]</version.antlr>
-        <version.asm>[3.3,3.3-redhat-1]</version.asm>
+        <version.asm>[3.3.1,3.3.1-redhat-1]</version.asm>
         <version.ch.qos.cal10n.cal10n-api>[0.7.3,0.7.3-redhat-1]</version.ch.qos.cal10n.cal10n-api>
         <version.commons-beanutils>[1.8.0,1.8.0-redhat-1]</version.commons-beanutils>
         <version.commons-codec>[1.4,1.4-redhat-1]</version.commons-codec>
