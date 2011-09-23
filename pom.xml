@@ -103,7 +103,7 @@
         <version.org.apache.felix.scr>[1.6.0,1.6.0-redhat-1]</version.org.apache.felix.scr>
         <version.org.apache.felix.webconsole>[3.1.6.SP1,3.1.6.SP1-redhat-1]</version.org.apache.felix.webconsole>
         <version.org.apache.james.apache-mime4j>[0.6,0.6-redhat-1]</version.org.apache.james.apache-mime4j>
-        <version.org.apache.httpcomponents>[4.1.1,4.1.1-redhat-1]</version.org.apache.httpcomponents>
+        <version.org.apache.httpcomponents>[4.1.3,4.1.3-redhat-1]</version.org.apache.httpcomponents>
         <version.org.apache.neethi>[3.0.0,3.0.0-redhat-1]</version.org.apache.neethi>
         <version.org.apache.velocity>[1.6.3,1.6.3-redhat-1]</version.org.apache.velocity>
         <version.org.apache.xalan>[2.7.1.,2.7.1-redhat-1]</version.org.apache.xalan>
