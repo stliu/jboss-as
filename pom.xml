@@ -128,7 +128,6 @@
         <version.org.jboss.ejb3>[2.0.0-beta-2,2.0.0-beta-2-redhat-1]</version.org.jboss.ejb3>
         <version.org.jboss.ejb3.ext-api>[2.0.0-beta-1,2.0.0-beta-1-redhat-1]</version.org.jboss.ejb3.ext-api>
         <version.org.jboss.ejb3.timerservice>[2.0.0-beta-3,2.0.0-beta-3-redhat-1]</version.org.jboss.ejb3.timerservice>
-        <version.org.jboss.integration.jboss-jca-spi>[6.0.0.CR1,6.0.0.CR1-redhat-1]</version.org.jboss.integration.jboss-jca-spi>
         <version.org.jboss.interceptor>[2.0.0.Alpha3,2.0.0.Alpha3-redhat-1]</version.org.jboss.interceptor>
         <version.org.jboss.invocation>[1.1.0.Final,1.1.0.Final-redhat-1]</version.org.jboss.invocation>
         <version.org.jboss.ironjacamar>[1.0.3.Final,1.0.3.Final-redhat-1]</version.org.jboss.ironjacamar>
@@ -420,6 +419,7 @@
                                             <exclude>org.apache.xalan:xalan</exclude>
                                             <exclude>org.hibernate:ejb3-persistence</exclude>
                                             <exclude>org.hibernate.java-persistence:jpa-api</exclude>
+                                            <exclude>org.jboss.integration:jboss-jca-spi</exclude>
                                             <exclude>org.jboss.interceptor:jboss-interceptor-api</exclude>
                                             <exclude>org.jboss.javaee:jboss-javaee</exclude>
                                             <exclude>org.jboss.javaee:jboss-ejb-api</exclude>
@@ -3165,26 +3165,6 @@
                 <groupId>org.jboss.ejb3.tx2</groupId>
                 <artifactId>jboss-ejb3-tx2-spi</artifactId>
                 <version>${version.org.jboss.ejb3}</version>
-            </dependency>
-
-			<dependency>
-                <groupId>org.jboss.integration</groupId>
-                <artifactId>jboss-jca-spi</artifactId>
-                <version>${version.org.jboss.integration.jboss-jca-spi}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jboss.aop</groupId>
-                        <artifactId>jboss-aop</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.jboss</groupId>
-                        <artifactId>jboss-common-core</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.jboss.javaee</groupId>
-                        <artifactId>jboss-jca-api</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <dependency>
