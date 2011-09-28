@@ -128,7 +128,7 @@
         <version.org.jboss.ejb3>[2.0.0-beta-2,2.0.0-beta-2-redhat-1]</version.org.jboss.ejb3>
         <version.org.jboss.ejb3.ext-api>[2.0.0-beta-1,2.0.0-beta-1-redhat-1]</version.org.jboss.ejb3.ext-api>
         <version.org.jboss.ejb3.timerservice>[2.0.0-beta-3,2.0.0-beta-3-redhat-1]</version.org.jboss.ejb3.timerservice>
-        <version.org.jboss.integration.jboss-jca-spi>[7.0.0.CR1,7.0.0.CR1-redhat-1]</version.org.jboss.integration.jboss-jca-spi>
+        <version.org.jboss.integration.jboss-jca-spi>[6.0.0.CR1,6.0.0.CR1-redhat-1]</version.org.jboss.integration.jboss-jca-spi>
         <version.org.jboss.interceptor>[2.0.0.Alpha3,2.0.0.Alpha3-redhat-1]</version.org.jboss.interceptor>
         <version.org.jboss.invocation>[1.1.0.Final,1.1.0.Final-redhat-1]</version.org.jboss.invocation>
         <version.org.jboss.ironjacamar>[1.0.3.Final,1.0.3.Final-redhat-1]</version.org.jboss.ironjacamar>
