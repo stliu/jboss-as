@@ -193,16 +193,6 @@ public class ParseAndMarshalModelsTestCase {
         standaloneXmlTest(getExampleConfigFile("standalone-minimalistic.xml"));
     }
 
-    @Test
-    public void testStandaloneOSGiOnlyXml() throws Exception {
-        standaloneXmlTest(getExampleConfigFile("standalone-osgi-only.xml"));
-    }
-
-    @Test
-    public void testStandaloneXtsXml() throws Exception {
-        standaloneXmlTest(getExampleConfigFile("standalone-xts.xml"));
-    }
-
     @Test @Ignore("AS7-2901")
     public void testStandaloneHornetqColocatedXml() throws Exception {
         standaloneXmlTest(getExampleConfigFile("standalone-hornetq-colocated.xml"));
@@ -323,11 +313,6 @@ public class ParseAndMarshalModelsTestCase {
         ModelNode reparsedModel = loadHostModel(file);
 
         compare(originalModel, reparsedModel);
-    }
-
-    @Test
-    public void testDomainOSGiOnlyXml() throws Exception {
-        domainXmlTest(getExampleConfigFile("domain-osgi-only.xml"));
     }
 
     @Test
