@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.jboss.as</groupId>
         <artifactId>jboss-as-testsuite-integration-agg</artifactId>
-        <version>7.1.0.CR1b</version>
+        <version>7.1.0.CR1-redhat-1</version>
     </parent>
 
     <!-- ********************************************************************************** -->
@@ -15,7 +15,7 @@
     <!-- ********************************************************************************** -->
     <groupId>org.jboss.as</groupId>
     <artifactId>jboss-as-testsuite-integration-iiop</artifactId>
-    <version>7.1.0.CR1b</version>
+    <version>7.1.0.CR1-redhat-1</version>
 
     <name>JBoss AS Test Suite: Integration - IIOP</name>
 

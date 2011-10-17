@@ -27,7 +27,7 @@
   <parent>
     <groupId>org.jboss.as</groupId>
     <artifactId>jboss-as-osgi</artifactId>
-    <version>7.1.0.CR1b</version>
+    <version>7.1.0.CR1-redhat-1</version>
   </parent>
 
   <groupId>org.jboss.as</groupId>
