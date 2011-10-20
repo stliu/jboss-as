@@ -56,9 +56,6 @@
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
 
-        <!-- Plugin versions -->
-        <version.surefire.plugin>2.9</version.surefire.plugin>
-
         <!-- Surefire args -->
         <surefire.jpda.args/>
         <surefire.system.args>-da ${surefire.jpda.args}</surefire.system.args>
@@ -129,7 +126,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>buildnumber-maven-plugin</artifactId>
-                <version>1.0</version>
                 <executions>
                     <execution>
                         <phase>validate</phase>
