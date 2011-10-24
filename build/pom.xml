@@ -1526,6 +1526,7 @@
 
     </dependencies>
 
+    <!-- 
     <profiles>
         <profile>
             <id>release</id>
@@ -1562,4 +1563,5 @@
             </build>
         </profile>
     </profiles>
+     -->
 </project>

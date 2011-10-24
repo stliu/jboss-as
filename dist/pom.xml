@@ -80,7 +80,7 @@
                                     <workDirectory>target/assembly/work</workDirectory>
                                 </configuration>
                             </execution>
-                            <execution>
+                            <!-- <execution>
                                 <id>assemblew-web</id>
                                 <phase>package</phase>
                                 <goals>
@@ -95,7 +95,7 @@
                                     <outputDirectory>target/</outputDirectory>
                                     <workDirectory>target/assembly-web/work</workDirectory>
                                 </configuration>
-                            </execution>
+                            </execution> -->
                         </executions>
                     </plugin>
                 </plugins>

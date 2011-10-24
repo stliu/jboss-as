@@ -66,13 +66,13 @@
         <module>appclient</module>
         <module>build</module>
         <module>build-config</module>
-        <module>arquillian</module>
+        <!-- <module>arquillian</module> -->
         <module>cli</module>
         <module>clustering</module>
         <module>connector</module>
         <module>controller</module>
         <module>controller-client</module>
-        <module>demos</module>
+        <!-- <module>demos</module> -->
         <module>deployment-repository</module>
         <module>deployment-scanner</module>
         <module>dist</module>
@@ -111,7 +111,7 @@
         <module>webservices</module>
         <module>weld</module>
         <module>xts</module>
-        <module>testsuite</module>
+        <!-- <module>testsuite</module> -->
 
   </modules>
 
