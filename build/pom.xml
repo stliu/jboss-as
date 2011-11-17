@@ -1466,23 +1466,8 @@
                 </dependency>
 
                 <dependency>
-                    <groupId>org.picketlink</groupId>
-                    <artifactId>picketlink-fed</artifactId>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.picketlink</groupId>
-                    <artifactId>picketlink-bindings</artifactId>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.picketlink</groupId>
-                    <artifactId>picketlink-bindings-jboss</artifactId>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.picketlink</groupId>
-                    <artifactId>picketlink-trust-jbossws</artifactId>
+                    <groupId>org.picketlink.product</groupId>
+                    <artifactId>picketlink-core</artifactId>
                 </dependency>
 
                 <dependency>

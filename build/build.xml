@@ -1065,10 +1065,7 @@
         </module-def>
 
         <module-def name="org.picketlink">
-            <maven-resource group="org.picketlink" artifact="picketlink-fed"/>
-            <maven-resource group="org.picketlink" artifact="picketlink-bindings"/>
-            <maven-resource group="org.picketlink" artifact="picketlink-bindings-jboss"/>
-            <maven-resource group="org.picketlink" artifact="picketlink-trust-jbossws"/>
+            <maven-resource group="org.picketlink.product" artifact="picketlink-core"/>
         </module-def>
 
         <module-def name="org.python.jython.standalone">
