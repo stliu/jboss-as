@@ -240,7 +240,7 @@
         <version.org.mockito>1.8.5</version.org.mockito>
         <version.org.picketbox>4.0.6.Beta2</version.org.picketbox>
         <version.org.picketbox.picketbox-commons>1.0.0.CR1</version.org.picketbox.picketbox-commons>
-        <version.org.picketlink>2.0.1.final</version.org.picketlink>
+        <version.org.picketlink>2.0.2</version.org.picketlink>
         <version.org.projectodd.stilts>0.1.20</version.org.projectodd.stilts>
         <version.org.python.jython.standalone>2.5.2</version.org.python.jython.standalone>
         <version.org.rhq.helpers>3.0.4</version.org.rhq.helpers>
@@ -5679,6 +5679,42 @@
             </dependency>
 
             <dependency>
+                <groupId>org.picketlink.product</groupId>
+               <artifactId>picketlink-core</artifactId>
+               <version>${version.org.picketlink}</version>
+               <exclusions>
+                  <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging-api</artifactId>
+                  </exclusion>
+                  <exclusion>
+                    <groupId>javax.persistence</groupId>
+                    <artifactId>persistence-api</artifactId>
+                  </exclusion>
+                  <exclusion>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>servlet-api</artifactId>
+                  </exclusion>
+                  <exclusion>
+                    <groupId>org.apache</groupId>
+                    <artifactId>xmlsec</artifactId>
+                  </exclusion>
+                  <exclusion>
+                    <groupId>org.jboss.logging</groupId>
+                    <artifactId>jboss-logging-spi</artifactId>
+                  </exclusion>
+                  <exclusion>
+                    <groupId>org.jboss.security</groupId>
+                    <artifactId>jbosssx</artifactId>
+                  </exclusion>
+                  <exclusion>
+                    <groupId>org.jboss.security</groupId>
+                    <artifactId>jboss-security-spi</artifactId>
+                  </exclusion>
+               </exclusions>
+            </dependency>
+
+            <dependency>
                 <groupId>org.picketbox</groupId>
                 <artifactId>picketbox</artifactId>
                 <version>${version.org.picketbox}</version>
@@ -5688,84 +5724,6 @@
                 <groupId>org.picketbox</groupId>
                 <artifactId>picketbox-commons</artifactId>
                 <version>${version.org.picketbox.picketbox-commons}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.picketlink</groupId>
-                <artifactId>picketlink-fed</artifactId>
-                <version>${version.org.picketlink}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.picketlink</groupId>
-                <artifactId>picketlink-bindings</artifactId>
-                <version>${version.org.picketlink}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>javax.servlet</groupId>
-                        <artifactId>servlet-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.picketlink</groupId>
-                        <artifactId>picketlink-fed-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.picketlink</groupId>
-                        <artifactId>picketlink-fed-model</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.picketlink</groupId>
-                        <artifactId>picketlink-web</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>org.picketlink</groupId>
-                <artifactId>picketlink-bindings-jboss</artifactId>
-                <version>${version.org.picketlink}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jboss.security</groupId>
-                        <artifactId>jboss-security-spi</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.jboss.security</groupId>
-                        <artifactId>jbosssx</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.picketlink</groupId>
-                        <artifactId>picketlink-fed-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.picketlink</groupId>
-                        <artifactId>picketlink-fed-model</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.picketlink</groupId>
-                        <artifactId>picketlink-web</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>org.picketlink</groupId>
-                <artifactId>picketlink-trust-jbossws</artifactId>
-                <version>${version.org.picketlink}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jboss.logging</groupId>
-                        <artifactId>jboss-logging-spi</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.picketbox</groupId>
-                        <artifactId>jboss-security-spi</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.picketbox</groupId>
-                        <artifactId>jbosssx</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <dependency>
