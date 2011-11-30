@@ -111,7 +111,7 @@
 
                                     <!-- Parameters to test cases. -->
                                     <systemPropertyVariables>
-                                        <jboss.server.config.file.name>standalone-full.xml</jboss.server.config.file.name>
+                                        <jboss.server.config.file.name>standalone.xml</jboss.server.config.file.name>
                                         <jboss.inst>${basedir}/target/jbossas</jboss.inst>
                                         <!-- Needed for the IIOP tests-->
                                         <com.sun.CORBA.ORBUseDynamicStub>true</com.sun.CORBA.ORBUseDynamicStub>
@@ -152,7 +152,7 @@
 
                                     <!-- Parameters to test cases. -->
                                     <systemPropertyVariables>
-                                        <jboss.server.config.file.name>standalone.xml</jboss.server.config.file.name>
+                                        <jboss.server.config.file.name>standalone-web.xml</jboss.server.config.file.name>
                                         <jboss.inst>${basedir}/target/jbossas</jboss.inst>
                                     </systemPropertyVariables>
 
@@ -191,7 +191,7 @@
             </build>
         </profile>
         
-        <!-- With -DnoWebProfile, the all tests will run with standalone-full.xml. -->
+        <!-- With -DnoWebProfile, the all tests will run with standalone.xml. -->
         <!-- This changes the FULL exec so that it includes all tests. -->
         <profile>
             <id>webProfileExclusion.profile</id>
@@ -215,7 +215,7 @@
                                 <goals><goal>test</goal></goals>
                                 <configuration>
                                     <systemPropertyVariables>
-                                        <jboss.server.config.file.name>standalone-full.xml</jboss.server.config.file.name>
+                                        <jboss.server.config.file.name>standalone.xml</jboss.server.config.file.name>
                                     </systemPropertyVariables>
                                     <includes>
                                         <include>**/*TestCase.java</include>
@@ -233,7 +233,7 @@
 
 
 
-        <!-- When -Dtest=... is set, only the default surefire execution with standalone-full.xml will run. -->
+        <!-- When -Dtest=... is set, only the default surefire execution with standalone.xml will run. -->
         <profile>
             <id>onlyOneSurefireExecution.basic.profile</id>
             <activation><property><name>test</name></property></activation>
