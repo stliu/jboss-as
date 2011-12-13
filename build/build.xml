@@ -319,8 +319,12 @@
             <maven-resource group="ch.qos.cal10n" artifact="cal10n-api"/>
         </module-def>
 
-        <module-def name="com.google.guava">
+    	<module-def name="com.google.guava">
             <maven-resource group="com.google.guava" artifact="guava" />
+        </module-def>
+
+        <module-def name="com.googlecode.jtype">
+            <maven-resource group="com.googlecode.jtype" artifact="jtype"/>
         </module-def>
 
         <module-def name="com.h2database.h2">
