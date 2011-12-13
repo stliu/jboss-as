@@ -3083,7 +3083,7 @@
             <dependency>
                 <groupId>org.jboss</groupId>
                 <artifactId>jboss-common-core</artifactId>
-                <version>${version.org.jboss.common-core}</version>
+                <version>${version.org.jboss.jboss-common-core}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.jboss.logging</groupId>
@@ -3290,7 +3290,7 @@
             <dependency>
                 <groupId>org.jboss.ejb3</groupId>
                 <artifactId>jboss-ejb3-ext-api</artifactId>
-                <version>${version.org.jboss.ejb3.ext-api}</version>
+                <version>${version.org.jboss.ejb3}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.jboss.javaee</groupId>
@@ -5696,7 +5696,7 @@
             <dependency>
                 <groupId>xml-resolver</groupId>
                 <artifactId>xml-resolver</artifactId>
-                <version>${version.org.apache.xml-resolver}</version>
+                <version>${version.xml-resolver}</version>
             </dependency>
 
             <dependency>
