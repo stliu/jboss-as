@@ -1557,6 +1557,7 @@
             </properties>
         </profile>
 
+        <!-- 
         <profile>
             <id>release</id>
             <activation>
@@ -1591,6 +1592,8 @@
                 </plugins>
             </build>
         </profile>
+        -->
+
     </profiles>
 </project>
 
