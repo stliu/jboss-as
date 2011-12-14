@@ -966,11 +966,6 @@
 
                 <dependency>
                     <groupId>org.jboss.as</groupId>
-                    <artifactId>jboss-as-jpa-openjpa</artifactId>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.jboss.as</groupId>
                     <artifactId>jboss-as-jpa-spi</artifactId>
                 </dependency>
 
