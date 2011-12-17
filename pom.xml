@@ -5649,12 +5649,10 @@
                 <module>appclient</module>
                 <module>build</module>
                 <module>build-config</module>
-                <module>arquillian</module>
                 <module>cli</module>
                 <module>clustering</module>
                 <module>cmp</module>
                 <module>connector</module>
-                <module>demos</module>
                 <module>deployment-scanner</module>
                 <module>dist</module>
                 <module>ee</module>
@@ -5685,6 +5683,19 @@
                 <module>webservices</module>
                 <module>weld</module>
                 <module>xts</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>testsuite</id>
+            <activation>
+                <property>
+                    <name>allTests</name>
+                </property>
+            </activation>
+            <modules>
+                <module>arquillian</module>
+                <module>demos</module>
                 <module>testsuite</module>
             </modules>
         </profile>
