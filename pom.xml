@@ -64,9 +64,10 @@
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
 
-        <!-- Dependencies not present in AS build -->
+        <!-- Special cases related to JBPAPP-7781 -->
         <version.com.sun.org.apache.xml.internal>20050927</version.com.sun.org.apache.xml.internal>
         <version.com.github.relaxng>2011.1</version.com.github.relaxng>
+        <version.org.jboss.osgi.http>1.0.5-redhat-0-todo</version.org.jboss.osgi.http>
 
         <!-- Non-default plugin versions and configuration -->
         <version.bundle.plugin>2.3.4-redhat-1</version.bundle.plugin>
