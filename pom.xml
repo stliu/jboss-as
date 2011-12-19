@@ -64,6 +64,10 @@
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
 
+        <!-- Dependencies not present in AS build -->
+        <version.com.sun.org.apache.xml.internal>20050927</version.com.sun.org.apache.xml.internal>
+        <version.com.github.relaxng>2011.1</version.com.github.relaxng>
+
         <!-- Non-default plugin versions and configuration -->
         <version.bundle.plugin>2.3.4-redhat-1</version.bundle.plugin>
         <version.javacc.plugin>2.4.1-redhat-1</version.javacc.plugin>

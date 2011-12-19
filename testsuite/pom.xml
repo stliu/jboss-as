@@ -159,6 +159,17 @@
                 </exclusion>
             </exclusions>
         </dependency>
+         <!-- Two dependencies packaged with jaxb-xjc upstream -->
+        <dependency>
+            <groupId>com.sun.org.apache.xml.internal</groupId>
+            <artifactId>resolver</artifactId>
+            <version>${version.com.sun.org.apache.xml.internal}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.relaxng</groupId>
+            <artifactId>relaxngDatatype</artifactId>
+            <version>${version.com.github.relaxng}</version>
+        </dependency>
         <dependency>
             <groupId>org.projectodd.stilts</groupId>
             <artifactId>stilts-stomp-client</artifactId>
