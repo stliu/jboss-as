@@ -97,7 +97,7 @@ public class StandardConfigsXMLValidationUnitTestCase extends AbstractValidation
 
     @Test
     public void testStandalone() throws Exception {
-        parseXml("standalone/configuration/standalone.xml");
+        parseXml("standalone/configuration/standalone-web.xml");
     }
 
     @Test
@@ -107,7 +107,7 @@ public class StandardConfigsXMLValidationUnitTestCase extends AbstractValidation
 
     @Test
     public void testStandaloneFull() throws Exception {
-        parseXml("standalone/configuration/standalone-full.xml");
+        parseXml("standalone/configuration/standalone.xml");
     }
 
     @Test
