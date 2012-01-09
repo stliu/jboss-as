@@ -29,11 +29,12 @@
     
     <build>
         <plugins>
+            <!-- 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <configuration>
-                    <!-- TODO: Don't fail on checkstyle until AS7-2954 is fixed.  -->
+                    <!- TODO: Don't fail on checkstyle until AS7-2954 is fixed.  ->
                     <failsOnError>false</failsOnError>
                 </configuration>
                 
@@ -52,6 +53,7 @@
                 </executions>
                 
             </plugin>
+              -->
         </plugins>
     </build>
 
