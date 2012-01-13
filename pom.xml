@@ -973,7 +973,7 @@
             <dependency>
                 <groupId>com.sun.faces</groupId>
                 <artifactId>jsf-impl</artifactId>
-                <version>${version.javax.faces.jsf-impl}</version>
+                <version>${version.com.sun.faces}</version>
             </dependency>
 
             <dependency>
@@ -1113,13 +1113,13 @@
             <dependency>
                 <groupId>javax.faces</groupId>
                 <artifactId>jsf-api</artifactId>
-                <version>${version.javax.faces.jsf-api.1.2}</version>
+                <version>${version.javax.faces}</version>
             </dependency>
 
             <dependency>
                 <groupId>javax.faces</groupId>
                 <artifactId>jsf-impl</artifactId>
-                <version>${version.javax.faces.jsf-impl.1.2}</version>
+                <version>${version.javax.faces}</version>
             </dependency>
 
             <dependency>
