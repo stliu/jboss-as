@@ -2851,6 +2851,10 @@
                 <version>${version.org.hibernate}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant-antlr</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>com.fasterxml</groupId>
                         <artifactId>classmate</artifactId>
                     </exclusion>
