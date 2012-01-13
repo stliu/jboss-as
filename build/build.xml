@@ -237,7 +237,22 @@
 
     </target>
 
-    <target name="modules" depends="modules-minimalistic">
+    <target name="modules-product">
+        <!--
+          ~ Product configuration modules.
+          -->
+
+        <module-def name="org.jboss.as.console" slot="eap">
+            <maven-resource-with-classifier group="org.jboss.as" artifact="jboss-as-console" classifier="resources"/>
+        </module-def>
+
+        <module-def name="org.jboss.as.domain-http-error-context" slot="eap"/>
+
+        <module-def name="org.jboss.as.product" slot="eap"/>
+
+    </target>
+
+    <target name="modules" depends="modules-minimalistic, modules-product">
         <!--
           ~ Complete list of modules to assemble.
           ~
