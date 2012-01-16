@@ -1103,7 +1103,7 @@
         </module-def>
 
         <module-def name="org.picketlink">
-            <maven-resource group="org.picketlink.product" artifact="picketlink-core"/>
+            <maven-resource group="org.picketlink.product" artifact="picketlink-core" jandex="true"/>
         </module-def>
 
         <module-def name="org.python.jython.standalone">
