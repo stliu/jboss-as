@@ -951,6 +951,12 @@
             </dependency>
 
             <dependency>
+                <groupId>com.github.relaxng</groupId>
+                <artifactId>relaxngDatatype</artifactId>
+                <version>${version.com.github.relaxng}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${version.com.google.guava}</version>
