@@ -10,6 +10,7 @@
         <extension module="org.jboss.as.ee"/>
         <extension module="org.jboss.as.ejb3"/>
         <extension module="org.jboss.as.jacorb"/>
+        <extension module="org.jboss.as.jaxr"/>
         <extension module="org.jboss.as.jaxrs"/>
         <extension module="org.jboss.as.jdr"/>
         <extension module="org.jboss.as.jmx"/>
@@ -132,19 +133,26 @@
             <subsystem xmlns="urn:jboss:domain:infinispan:1.1" default-cache-container="hibernate">
                 <cache-container name="hibernate" default-cache="local-query">
                     <local-cache name="entity">
+                        <transaction mode="NON_XA"/>
                         <eviction strategy="LRU" max-entries="10000"/>
                         <expiration max-idle="100000"/>
                     </local-cache>
                     <local-cache name="local-query">
+                        <transaction mode="NON_XA"/>
                         <eviction strategy="LRU" max-entries="10000"/>
                         <expiration max-idle="100000"/>
                     </local-cache>
                     <local-cache name="timestamps">
+                        <transaction mode="NON_XA"/>
                         <eviction strategy="NONE"/>
                     </local-cache>
                 </cache-container>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:jacorb:1.1"/>
+            <subsystem xmlns="urn:jboss:domain:jaxr:1.0">
+                <connection-factory jndi-name="java:jboss/jaxr/ConnectionFactory"/>
+                       <juddi-server publish-url="http://localhost:8080/juddi/publish" query-url="http://localhost:8080/juddi/query"/>
+            </subsystem>
             <subsystem xmlns="urn:jboss:domain:jaxrs:1.0"/>
             <subsystem xmlns="urn:jboss:domain:jca:1.1">
                 <archive-validation enabled="true"/>
@@ -765,8 +773,6 @@
             <socket-binding name="https" port="8443"/>
             <socket-binding name="jacorb" port="3528"/>
             <socket-binding name="jacorb-ssl" port="3529"/>
-            <socket-binding name="jmx-connector-registry" interface="management" port="1090"/>
-            <socket-binding name="jmx-connector-server" interface="management" port="1091"/>
             <socket-binding name="messaging" port="5445"/>
             <socket-binding name="messaging-throughput" port="5455"/>
             <socket-binding name="osgi-http" interface="management" port="8090"/>
@@ -788,8 +794,6 @@
             <socket-binding name="jgroups-tcp-fd" port="57600"/>
             <socket-binding name="jgroups-udp" port="55200" multicast-address="${jboss.default.multicast.address:230.0.0.4}" multicast-port="45688"/>
             <socket-binding name="jgroups-udp-fd" port="54200"/>
-            <socket-binding name="jmx-connector-registry" interface="management" port="1090"/>
-            <socket-binding name="jmx-connector-server" interface="management" port="1091"/>
             <socket-binding name="messaging" port="5445"/>
             <socket-binding name="messaging-throughput" port="5455"/>
             <socket-binding name="modcluster" port="0"  multicast-address="224.0.1.105" multicast-port="23364"/>
