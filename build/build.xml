@@ -592,6 +592,10 @@
             <maven-resource group="org.codehaus.jackson" artifact="jackson-xc" />
         </module-def>
 
+        <module-def name="org.hamcrest">
+            <maven-resource group="org.hamcrest" artifact="hamcrest-core"/>
+        </module-def>
+
         <module-def name="org.hibernate">
             <maven-resource group="org.hibernate" artifact="hibernate-core" />
             <maven-resource group="org.hibernate.common" artifact="hibernate-commons-annotations" />

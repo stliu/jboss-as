@@ -2852,6 +2852,13 @@
             </dependency>
 
             <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-core</artifactId>
+                <version>${version.org.hamcrest}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-core</artifactId>
                 <version>${version.org.hibernate}</version>
