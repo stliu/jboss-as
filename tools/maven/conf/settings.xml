@@ -160,10 +160,10 @@ under the License.
     <mirror>
       <id>eap6-mirror-setting</id>
       <mirrorOf>
-         *,!mead-eap6,!mead-eap6-plugins,!jboss-public-eap6,!jboss-public-eap6-plugins,!central-eap6,!central-eap6-plugins
+         *,!mead-eap6,!mead-eap6-plugins,!central-eap6,!central-eap6-plugins,!jboss-public-eap6,!jboss-public-eap6-plugins
       </mirrorOf>
       <name>Mirror Settings for EAP 6 build</name>
-      <url>none</url>
+      <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6-rhel-6-build/latest/maven/</url>
     </mirror>
   </mirrors>
   
@@ -258,10 +258,22 @@ under the License.
       <id>public-repositories</id>
       <activation>
         <property>
-          <name>public-repositories</name>
+          <name>allTests</name>
         </property>
       </activation>
       <repositories>
+        <repository>
+          <id>central-eap6</id>
+          <name>Use unique IDs for downloading artifacts vs. plugins from central</name>
+          <url>http://repo1.maven.org/maven2</url>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
         <repository>
           <id>jboss-public-eap6</id>
           <name>JBoss Public Repository Group</name>
@@ -274,18 +286,6 @@ under the License.
           <snapshots>
             <enabled>true</enabled>
             <updatePolicy>never</updatePolicy>
-          </snapshots>
-        </repository>
-        <repository>
-          <id>central-eap6</id>
-          <name>Use unique IDs for downloading artifacts vs. plugins from central</name>
-          <url>http://repo1.maven.org/maven2</url>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-          <snapshots>
-            <enabled>false</enabled>
           </snapshots>
         </repository>
       </repositories>
@@ -341,24 +341,13 @@ under the License.
       <id>public-plugin-repositories</id>
       <activation>
         <property>
-          <name>public-plugin-repositories</name>
+          <name>allTests</name>
         </property>
       </activation>
       <!-- Note: plugin repositories have non-matching IDs to dependency repositories.
        |   This allows plugin repos to be mirrored separately.
        -->
       <pluginRepositories>
-        <pluginRepository>
-          <id>jboss-public-eap6-plugins</id>
-          <name>JBoss Public Repository Group Plugins</name>
-          <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </pluginRepository>
         <pluginRepository>
           <id>central-eap6-plugins</id>
           <name>Use unique IDs for downloading artifacts vs. plugins from central</name>
@@ -369,6 +358,17 @@ under the License.
           </releases>
           <snapshots>
             <enabled>false</enabled>
+          </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+          <id>jboss-public-eap6-plugins</id>
+          <name>JBoss Public Repository Group Plugins</name>
+          <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
           </snapshots>
         </pluginRepository>
       </pluginRepositories>      
