@@ -1144,9 +1144,7 @@
         </module-def>
 
         <module-def name="org.picketlink">
-            <maven-resource group="org.picketlink" artifact="picketlink-fed" jandex="true"/>
-            <maven-resource group="org.picketlink" artifact="picketlink-bindings" jandex="true"/>
-            <maven-resource group="org.picketlink" artifact="picketlink-bindings-jboss"/>
+            <maven-resource group="org.picketlink.product.eap" artifact="picketlink-core" jandex="true"/>
         </module-def>
 
         <module-def name="org.picketbox">
