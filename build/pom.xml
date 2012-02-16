@@ -30,7 +30,7 @@
     <parent>
         <groupId>org.jboss.as</groupId>
         <artifactId>jboss-as-parent</artifactId>
-        <version>7.1.0.Final</version>
+        <version>7.1.0.DR3-redhat-1</version>
     </parent>
 
     <artifactId>jboss-as-build</artifactId>
