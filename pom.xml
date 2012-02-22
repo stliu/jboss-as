@@ -5328,6 +5328,10 @@
                         <artifactId>wstx-lgpl</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>stax</groupId>
+                        <artifactId>stax-api</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>ws-commons</groupId>
                         <artifactId>policy</artifactId>
                     </exclusion>
