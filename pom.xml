@@ -170,6 +170,7 @@
                                             <exclude>jboss.web:jsp-api</exclude>
                                             <exclude>jboss.web:servlet-api</exclude>
                                             <exclude>net.sf.kxml:kxml2</exclude>
+                                            <exclude>org.apache.aries:*</exclude>
                                             <exclude>org.apache.geronimo.specs:geronimo-activation_1.1_spec</exclude>
                                             <exclude>org.apache.geronimo.specs:geronimo-jaxb_2.1_spec</exclude>
                                             <exclude>org.apache.geronimo.specs:geronimo-jaxr_1.0_spec</exclude>
@@ -1355,6 +1356,14 @@
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>org.apache.aries</groupId>
+                        <artifactId>org.apache.aries.util</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-rt-core</artifactId>
                     </exclusion>
@@ -1415,6 +1424,10 @@
                         <artifactId>jaxb-api</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.codehaus.jra</groupId>
                         <artifactId>jra</artifactId>
                     </exclusion>
@@ -1439,6 +1452,10 @@
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-rt-transports-local</artifactId>
                     </exclusion>
@@ -1450,6 +1467,10 @@
                 <artifactId>cxf-rt-bindings-soap</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-tools-common</artifactId>
@@ -1487,6 +1508,10 @@
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-rt-databinding-jaxb</artifactId>
                     </exclusion>
@@ -1498,6 +1523,10 @@
                 <artifactId>cxf-rt-core</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.ws.xmlschema</groupId>
                         <artifactId>xmlschema-core</artifactId>
@@ -1514,6 +1543,10 @@
                 <artifactId>cxf-rt-databinding-aegis</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-rt-core</artifactId>
@@ -1536,6 +1569,10 @@
                 <artifactId>cxf-rt-frontend-jaxws</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>javax.xml.soap</groupId>
                         <artifactId>saaj-api</artifactId>
@@ -1619,6 +1656,12 @@
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-rt-frontend-simple</artifactId>
                 <version>${version.org.apache.cxf}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
@@ -1626,6 +1669,10 @@
                 <artifactId>cxf-rt-management</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-rt-core</artifactId>
@@ -1670,6 +1717,10 @@
                 <artifactId>cxf-rt-transports-http</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.geronimo.specs</groupId>
                         <artifactId>geronimo-javamail_1.4_spec</artifactId>
@@ -1718,6 +1769,10 @@
                 <artifactId>cxf-rt-transports-jms</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-rt-core</artifactId>
@@ -1779,6 +1834,10 @@
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-rt-core</artifactId>
                     </exclusion>
@@ -1790,6 +1849,10 @@
                 <artifactId>cxf-rt-transports-common</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-api</artifactId>
@@ -1805,6 +1868,12 @@
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-rt-ws-addr</artifactId>
                 <version>${version.org.apache.cxf}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
@@ -1812,6 +1881,10 @@
                 <artifactId>cxf-rt-ws-rm</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-rt-bindings-soap</artifactId>
@@ -1877,6 +1950,10 @@
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-rt-bindings-soap</artifactId>
                     </exclusion>
@@ -1933,6 +2010,10 @@
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>xml-apis</groupId>
                         <artifactId>xml-apis</artifactId>
                     </exclusion>
@@ -1973,6 +2054,10 @@
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.apache.velocity</groupId>
                         <artifactId>velocity</artifactId>
                     </exclusion>
@@ -1988,6 +2073,10 @@
                 <artifactId>cxf-tools-java2ws</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-tools-common</artifactId>
@@ -2080,6 +2169,10 @@
                 <artifactId>cxf-tools-validator</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-tools-common</artifactId>
@@ -2181,6 +2274,10 @@
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>javax.xml.soap</groupId>
                         <artifactId>saaj-api</artifactId>
                     </exclusion>
@@ -2248,6 +2345,10 @@
                 <artifactId>cxf-tools-wsdlto-databinding-jaxb</artifactId>
                 <version>${version.org.apache.cxf}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.aries.blueprint</groupId>
+                        <artifactId>org.apache.aries.blueprint.core</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-tools-common</artifactId>
