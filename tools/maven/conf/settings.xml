@@ -163,7 +163,7 @@ under the License.
          *,!mead-eap6,!mead-eap6-plugins,!central-eap6,!central-eap6-plugins,!jboss-public-eap6,!jboss-public-eap6-plugins
       </mirrorOf>
       <name>Mirror Settings for EAP 6 build</name>
-      <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6-rhel-6-build/latest/maven/</url>
+      <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6-devel-rhel-6-build/latest/maven/</url>
     </mirror>
   </mirrors>
   
@@ -307,7 +307,7 @@ under the License.
         <repository>
           <id>mead-eap6</id>
           <name>MEAD EAP6 Maven Repository</name>
-          <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6-rhel-6-build/latest/maven/</url>
+          <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6-devel-rhel-6-build/latest/maven/</url>
           <releases>
             <enabled>true</enabled>
             <updatePolicy>never</updatePolicy>
@@ -325,7 +325,7 @@ under the License.
         <pluginRepository>
           <id>mead-eap6-plugins</id>
           <name>MEAD EAP6 Maven Plugin Repository</name>
-          <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6-rhel-6-build/latest/maven/</url>
+          <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6-devel-rhel-6-build/latest/maven/</url>
           <releases>
             <enabled>true</enabled>
             <updatePolicy>never</updatePolicy>
