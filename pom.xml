@@ -1003,6 +1003,16 @@
                 <groupId>com.sun.xml.bind</groupId>
                 <artifactId>jaxb-xjc</artifactId>
                 <version>${version.sun.jaxb}</version>
+                <exclusions>
+                  <exclusion>
+                    <groupId>com.sun.xml.dtd-parser</groupId>
+                    <artifactId>dtd-parser</artifactId>
+                  </exclusion>
+                  <exclusion>
+                    <groupId>org.kohsuke.rngom</groupId>
+                    <artifactId>rngom</artifactId>
+                  </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
@@ -5261,10 +5271,6 @@
                     <exclusion>
                         <groupId>com.sun.xml.bind</groupId>
                         <artifactId>jaxb-impl</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.sun.xml.bind</groupId>
-                        <artifactId>jaxb-xjc</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>javax.xml.stream</groupId>
