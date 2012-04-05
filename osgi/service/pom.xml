@@ -86,6 +86,10 @@
             <artifactId>jbosgi-resolver-api</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.jboss.osgi.resolver</groupId>
+            <artifactId>jbosgi-resolver-felix</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.jboss.osgi.repository</groupId>
             <artifactId>jbosgi-repository-api</artifactId>
         </dependency>
