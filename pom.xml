@@ -4616,6 +4616,12 @@
             </dependency>
 
             <dependency>
+                <groupId>org.jboss.shrinkwrap.descriptors</groupId>
+                <artifactId>shrinkwrap-descriptors-api</artifactId>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.jboss.shrinkwrap</groupId>
                 <artifactId>shrinkwrap-impl-base</artifactId>
                 <version>${version.org.jboss.shrinkwrap.shrinkwrap}</version>
