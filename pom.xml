@@ -219,7 +219,6 @@
                                             <exclude>xml-apis:xml-apis</exclude>
                                         </excludes>
                                     </bannedDependencies>
-                                    <dependencyConvergence/>
                                 </rules>
                             </configuration>
                         </execution>
