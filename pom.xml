@@ -3258,6 +3258,12 @@
             </dependency>
 
             <dependency>
+              <groupId>org.jboss.arquillian.config</groupId>
+              <artifactId>arquillian-config-api</artifactId>
+              <version>${version.org.jboss.arquillian.core}</version>
+            </dependency>
+
+            <dependency>
               <groupId>org.jboss.arquillian.container</groupId>
               <artifactId>arquillian-container-spi</artifactId>
               <version>${version.org.jboss.arquillian.core}</version>
