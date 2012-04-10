@@ -5266,7 +5266,7 @@
             <dependency>
                 <groupId>org.jboss.ws.cxf</groupId>
                 <artifactId>jbossws-cxf-resources</artifactId>
-                <classifier>jboss711</classifier>
+                <classifier>jboss712</classifier>
                 <version>${version.org.jboss.ws.cxf}</version>
             </dependency>
 
