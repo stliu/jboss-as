@@ -5255,6 +5255,38 @@
                         <artifactId>jboss-logging-log4j</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-aop</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-asm</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-beans</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-context</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-expression</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-tx</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-jms</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>javax.xml.stream.api</groupId>
                         <artifactId>stax-api</artifactId>
                     </exclusion>
@@ -5269,6 +5301,40 @@
                 <groupId>org.jboss.ws.cxf</groupId>
                 <artifactId>jbossws-cxf-factories</artifactId>
                 <version>${version.org.jboss.ws.cxf}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-aop</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-asm</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-beans</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-context</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-expression</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-tx</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-jms</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
@@ -5279,6 +5345,38 @@
                     <exclusion>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-rt-frontend-jaxws</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-aop</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-asm</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-beans</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-context</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-expression</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-tx</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-jms</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
@@ -5434,6 +5532,38 @@
                     <exclusion>
                         <groupId>org.jboss.jaxr</groupId>
                         <artifactId>juddi-service</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-aop</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-asm</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-beans</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-context</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-expression</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-tx</artifactId>
+                    </exclusion>
+                    <exclusion>
+                         <groupId>org.springframework</groupId>
+                         <artifactId>spring-jms</artifactId>
                     </exclusion>
                </exclusions>
             </dependency>
