@@ -4274,6 +4274,18 @@
             </dependency>
 
             <dependency>
+                <groupId>org.jboss.osgi.deployment</groupId>
+                <artifactId>jbosgi-deployment</artifactId>
+                <version>${version.org.jboss.osgi.deployment}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.osgi</groupId>
+                        <artifactId>org.osgi.compendium</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
                 <groupId>org.jboss.osgi.framework</groupId>
                 <artifactId>jbosgi-framework-core</artifactId>
                 <version>${version.org.jboss.osgi.framework}</version>
