@@ -1049,6 +1049,12 @@
             </dependency>
 
             <dependency>
+                <groupId>com.sun.xml.txw2</groupId>
+                <artifactId>txw2</artifactId>
+                <version>${version.com.sun.xml.txw2}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
                 <version>${version.commons-beanutils}</version>

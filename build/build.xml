@@ -357,6 +357,10 @@
             <maven-resource group="com.sun.xml.messaging.saaj" artifact="saaj-impl"/>
         </module-def>
 
+        <module-def name="com.sun.xml.txw2">
+            <maven-resource group="com.sun.xml.txw2" artifact="txw2"/>
+        </module-def>
+
         <module-def name="org.dom4j">
             <maven-resource group="dom4j" artifact="dom4j" />
         </module-def>

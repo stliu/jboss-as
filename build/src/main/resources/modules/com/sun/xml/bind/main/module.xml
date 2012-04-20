@@ -34,6 +34,7 @@
     <dependencies>
         <module name="com.github.relaxng"/>
         <module name="com.sun.istack" />
+        <module name="com.sun.xml.txw2" />
         <module name="javax.api" />
         <module name="javax.xml.bind.api" />
         <module name="javax.xml.stream.api" />
