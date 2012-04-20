@@ -31,4 +31,8 @@
         <!-- Insert resources here -->
     </resources>
 
+    <dependencies>
+        <module name="javax.api" export="false"/>
+    </dependencies>
+
 </module>
