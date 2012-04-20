@@ -22,7 +22,7 @@
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
 
-<module xmlns="urn:jboss:module:1.1" name="com.sun.xml.bind">
+<module xmlns="urn:jboss:module:1.1" name="com.sun.istack">
     <properties>
         <property name="jboss.api" value="private"/>
     </properties>
@@ -31,11 +31,4 @@
         <!-- Insert resources here -->
     </resources>
 
-    <dependencies>
-        <module name="com.github.relaxng"/>
-        <module name="com.sun.istack" />
-        <module name="javax.api" />
-        <module name="javax.xml.bind.api" />
-        <module name="javax.xml.stream.api" />
-    </dependencies>
 </module>

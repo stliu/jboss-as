@@ -987,6 +987,24 @@
             </dependency>
 
             <dependency>
+                <groupId>com.sun.istack</groupId>
+                <artifactId>istack-commons-runtime</artifactId>
+                <version>${version.com.sun.istack}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.sun.istack</groupId>
+                <artifactId>istack-commons-tools</artifactId>
+                <version>${version.com.sun.istack}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
                 <groupId>com.sun.xml.bind</groupId>
                 <artifactId>jaxb-impl</artifactId>
                 <version>${version.sun.jaxb}</version>

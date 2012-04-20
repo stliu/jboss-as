@@ -335,6 +335,11 @@
             <maven-resource group="com.h2database" artifact="h2"/>
         </module-def>
 
+        <module-def name="com.sun.istack">
+            <maven-resource group="com.sun.istack" artifact="istack-commons-runtime"/>
+            <maven-resource group="com.sun.istack" artifact="istack-commons-tools"/>
+        </module-def>
+
         <module-def name="com.sun.jsf-impl">
             <maven-resource group="com.sun.faces" artifact="jsf-impl"/>
         </module-def>
